@@ -42,7 +42,6 @@ public class GroupCreationTest {
         driver.findElement(By.name("group_footer")).click();
         driver.findElement(By.name("group_footer")).clear();
         driver.findElement(By.name("group_footer")).sendKeys("test3");
-
         driver.findElement(By.name("submit")).click();
         driver.findElement(By.linkText("group page")).click();
 
