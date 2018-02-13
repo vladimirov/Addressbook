@@ -2,6 +2,7 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -19,18 +20,19 @@ public class ApplicationManager {
     }
 
     public void init() {
-        if (browser == BrowserType.CHROME) {
+        if (browser.equals(BrowserType.CHROME)) {
             System.setProperty("webdriver.chrome.driver", "C:\\Projects\\Addressbook\\src\\main\\resources\\chromedriver.exe");
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             driver = new ChromeDriver(capabilities);
-            driver.manage().window().maximize();
-        } else if (browser == BrowserType.FIREFOX) {
-            driver = new ChromeDriver();
-        } else if (browser == BrowserType.IE) {
+        } else if (browser.equals(BrowserType.FIREFOX)) {
+            System.setProperty("webdriver.firefox.driver", "C:\\Projects\\Addressbook\\src\\main\\resources\\geckodriver.exe");
+            DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+            driver = new FirefoxDriver(capabilities);
+        } else if (browser.equals(BrowserType.IE)) {
             driver = new InternetExplorerDriver();
-
         }
 
+        driver.manage().window().maximize();
         driver.get("http://localhost/addressbook/");
         sessionHelper = new SessionHelper(driver);
         groupHelper = new GroupHelper(driver);
