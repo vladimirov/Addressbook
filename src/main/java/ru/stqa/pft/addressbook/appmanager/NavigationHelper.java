@@ -14,6 +14,6 @@ public class NavigationHelper extends HelperBase{
     }
 
     public void gotoHomePage() {
-        driver.get("http://localhost/addressbook");
+        click(By.linkText("home"));
     }
 }
