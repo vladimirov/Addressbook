@@ -13,6 +13,7 @@ public class ApplicationManager {
     private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
+    private ContactHelper contactHelper;
     private String browser;
 
     public ApplicationManager(String browser) {
@@ -33,9 +34,10 @@ public class ApplicationManager {
         }
 
         driver.manage().window().maximize();
-        driver.get("http://localhost/addressbook/");
+        driver.get("http://localhost/addressbook");
         sessionHelper = new SessionHelper(driver);
         groupHelper = new GroupHelper(driver);
+        contactHelper = new ContactHelper(driver);
         navigationHelper = new NavigationHelper(driver);
         sessionHelper.login("admin", "secret");
     }
@@ -48,7 +50,12 @@ public class ApplicationManager {
         return groupHelper;
     }
 
+    public ContactHelper getContactHelper() {
+        return contactHelper;
+    }
+
     public NavigationHelper getNavigationHelper() {
         return navigationHelper;
     }
+
 }

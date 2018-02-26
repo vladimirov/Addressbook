@@ -4,8 +4,6 @@ public class ContactData {
 
     private final String firstname;
     private final String secondname;
-
-
     private final String group;
 
     public ContactData(String firstname, String secondname, String group) {

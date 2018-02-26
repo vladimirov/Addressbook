@@ -41,7 +41,7 @@ public class HelperBase {
             driver.findElement(locator);
             return true;
         } catch (NoSuchElementException e) {
-            return false
+            return false;
         }
     }
 }
