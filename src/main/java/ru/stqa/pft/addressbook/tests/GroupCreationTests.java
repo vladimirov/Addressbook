@@ -14,13 +14,13 @@ public class GroupCreationTests extends TestBase {
     public void testGroupCreation() {
         app.goTo().goToGroupPage();
         List<GroupData> before = app.group().list();
-        GroupData group = new GroupData("test2", null, null);
+        GroupData group = new GroupData().withName("test2");
         app.group().create(group);
         List<GroupData> after = app.group().list();
         Assert.assertEquals(after.size(), before.size() + 1);
         //Вычисление максимального значения 'value' у группы с помощью люмбда выражений
         int max = after.stream().max(Comparator.comparingInt(GroupData::getId)).get().getId();
-        group.setId(max);
+        group.withId(max);
         before.add(group);
         Comparator<? super GroupData> byId = Comparator.comparingInt(GroupData::getId);
         before.sort(byId);
