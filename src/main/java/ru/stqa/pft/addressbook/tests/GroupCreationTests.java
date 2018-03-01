@@ -1,31 +1,31 @@
 package ru.stqa.pft.addressbook.tests;
 
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 
-import java.util.Set;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class GroupCreationTests extends TestBase {
 
     @Test
     public void testGroupCreation() {
         app.goTo().goToGroupPage();
-        Set<GroupData> before = app.group().all();
+        Groups before = app.group().all();
         GroupData group = new GroupData().withName("test2");
         app.group().create(group);
-        Set<GroupData> after = app.group().all();
-        Assert.assertEquals(after.size(), before.size() + 1);
+        Groups after = app.group().all();
+        assertThat(after.size(), equalTo(before.size() + 1));
 
-        group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt());
-        before.add(group);
-        Assert.assertEquals(before, after);
-
+        assertThat(after, equalTo(
+                before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
     }
 }
 
-    //Вычисление максимального значения 'value' у группы
+
+//Вычисление максимального значения 'value' у группы
 //        int max = 0;
 //        for (GroupData g : after) {
 //            if (g.getId() > max) {
@@ -33,12 +33,12 @@ public class GroupCreationTests extends TestBase {
 //            }
 //        }
 
-    //Вычисление максимального значения 'value' у группы с помощью люмбда выражений
+//Вычисление максимального значения 'value' у группы с помощью люмбда выражений
 //int max = after.stream().max(Comparator.comparingInt(GroupData::getId)).get().getId();
 //group.withId(max);
 //before.add(group);
 
-    //Для сравненя множеств
+//Для сравненя множеств
 //Comparator<? super GroupData> byId = Comparator.comparingInt(GroupData::getId);
 //before.sort(byId);
 //after.sort(byId);
