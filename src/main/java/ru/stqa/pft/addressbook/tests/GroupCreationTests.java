@@ -16,7 +16,7 @@ public class GroupCreationTests extends TestBase {
         Groups before = app.group().all();
         GroupData group = new GroupData().withName("test");
         app.group().create(group);
-        assertThat(app.group().count(), equalTo(before.size() + 1));
+        assertThat(app.group().count(), equalTo(before.size() + 1));//hashing and pre-validation
         Groups after = app.group().all();
         assertThat(after, equalTo(
                 before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
@@ -28,12 +28,16 @@ public class GroupCreationTests extends TestBase {
         Groups before = app.group().all();
         GroupData group = new GroupData().withName("test'");
         app.group().create(group);
-        assertThat(app.group().count(), equalTo(before.size()));
+        assertThat(app.group().count(), equalTo(before.size()));//hashing and pre-validation
         Groups after = app.group().all();
         assertThat(after, equalTo(before));
     }
 
 }
+
+
+
+
 
 
 //Вычисление максимального значения 'value' у группы
