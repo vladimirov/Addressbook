@@ -7,7 +7,7 @@ import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.util.Set;
 
-public class GroupDeletionTests extends TestBase {
+public class GroupModificationTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {
@@ -18,14 +18,17 @@ public class GroupDeletionTests extends TestBase {
     }
 
     @Test
-    public void testGroupDeletion() {
+    public void testGroupModification() {
         Set<GroupData> before = app.group().all();
-        GroupData deletedGroup = before.iterator().next();
-        app.group().delete(deletedGroup);
+        GroupData modifiedGroup = before.iterator().next();
+        GroupData group = new GroupData()
+                .withId(modifiedGroup.getId()).withName("test1").withHeader("test2").withFooter("test3");
+        app.group().modify(group);
         Set<GroupData> after = app.group().all();
-        Assert.assertEquals(after.size(), before.size() - 1);
+        Assert.assertEquals(after.size(), before.size());
 
-        before.remove(deletedGroup);
+        before.remove(modifiedGroup);
+        before.add(group);
         Assert.assertEquals(before, after);
     }
 }
