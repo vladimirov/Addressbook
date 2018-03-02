@@ -16,13 +16,14 @@ public class GroupCreationTests extends TestBase {
         Groups before = app.group().all();
         GroupData group = new GroupData().withName("test");
         app.group().create(group);
+        System.out.println(before.size());
         assertThat(app.group().count(), equalTo(before.size() + 1));//hashing and pre-validation
         Groups after = app.group().all();
         assertThat(after, equalTo(
                 before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
     }
 
-    @Test
+    @Test(enabled = true)
     public void testNegativeGroupCreation() {
         app.goTo().goToGroupPage();
         Groups before = app.group().all();
@@ -34,10 +35,6 @@ public class GroupCreationTests extends TestBase {
     }
 
 }
-
-
-
-
 
 
 //Вычисление максимального значения 'value' у группы

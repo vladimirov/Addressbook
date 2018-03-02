@@ -13,8 +13,8 @@ public class ContactData {
     private String homePhone;
     private String mobilePhone;
     private String workPhone;
-    private String allPhones;
-    private String photo;
+//    private String allPhones;
+//    private String photo;
 
     private Set<GroupData> groups = new HashSet<GroupData>();
 
@@ -76,22 +76,37 @@ public class ContactData {
         return new Groups(groups);
     }
 
-    public File getPhoto() {
-        return new File(photo);
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                '}';
     }
 
-    public ContactData withPhoto(File photo) {
-        this.photo = photo.getPath();
+    public ContactData inGroup(GroupData group) {
+        groups.add(group);
         return this;
     }
 
-    public String getAllPhones() {
-        return allPhones;
-    }
 
-    public ContactData withAllPhones(String allPhones) {
-        this.allPhones = allPhones;
-        return this;
-    }
+//    public File getPhoto() {
+//        return new File(photo);
+//    }
+//
+//    public ContactData withPhoto(File photo) {
+//        this.photo = photo.getPath();
+//        return this;
+//    }
+//
+//    public String getAllPhones() {
+//        return allPhones;
+//    }
+//
+//    public ContactData withAllPhones(String allPhones) {
+//        this.allPhones = allPhones;
+//        return this;
+//    }
 
 }

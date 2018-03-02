@@ -59,9 +59,9 @@ public class ApplicationManager {
     }
 
 
-
-
     public ContactHelper contact() {
-        return contact();
+        return contactHelper;
     }
+
+
 }
