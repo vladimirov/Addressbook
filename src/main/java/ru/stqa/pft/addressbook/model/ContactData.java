@@ -11,7 +11,7 @@ public class ContactData {
     private String homePhone;
     private String mobilePhone;
     private String workPhone;
-//    private String allPhones;
+    private String allPhones;
 //    private String photo;
 
     private Set<GroupData> groups = new HashSet<>();
@@ -98,13 +98,13 @@ public class ContactData {
 //        return this;
 //    }
 //
-//    public String getAllPhones() {
-//        return allPhones;
-//    }
-//
-//    public ContactData withAllPhones(String allPhones) {
-//        this.allPhones = allPhones;
-//        return this;
-//    }
+    public String getAllPhones() {
+        return allPhones;
+    }
+
+    public ContactData withAllPhones(String allPhones) {
+        this.allPhones = allPhones;
+        return this;
+    }
 
 }
