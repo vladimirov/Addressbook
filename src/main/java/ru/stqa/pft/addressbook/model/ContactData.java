@@ -8,14 +8,13 @@ public class ContactData {
     private int id;
     private String firstname;
     private String lastname;
-    private String group;
     private String homePhone;
     private String mobilePhone;
     private String workPhone;
 //    private String allPhones;
 //    private String photo;
 
-    private Set<GroupData> groups = new HashSet<GroupData>();
+    private Set<GroupData> groups = new HashSet<>();
 
     public String getWorkPhone() {
         return workPhone;
@@ -31,7 +30,7 @@ public class ContactData {
     }
 
     public ContactData withMobilePhone(String mobilePhone) {
-        this.workPhone = mobilePhone;
+        this.mobilePhone = mobilePhone;
         return this;
     }
 
