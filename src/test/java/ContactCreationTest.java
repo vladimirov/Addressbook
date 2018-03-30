@@ -1,4 +1,4 @@
-package ru.stqa.pft.addressbook.tests;
+
 
 
 import org.testng.annotations.Test;
@@ -6,7 +6,7 @@ import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.io.File;
 
-public class ContactCreationTests extends TestBase {
+public class ContactCreationTest extends TestBase {
 
     @Test
     public void testContactCreation() {
@@ -18,15 +18,4 @@ public class ContactCreationTests extends TestBase {
         app.getContactHelper().submitContactCreation();
         app.getContactHelper().returnToHomePage();
     }
-
-/*    @Test
-    public void testCurrentDir() {
-        File currentDir = new File(".");
-        System.out.println("src/main/resources/stru.jpg");
-        File photo = new File("src/main/resources/stru.jpg");
-        System.out.println(photo.getAbsolutePath());
-        System.out.println(photo.exists());
-    }*/
-
-
 }

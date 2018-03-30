@@ -1,4 +1,4 @@
-package ru.stqa.pft.addressbook.tests;
+
 
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
@@ -10,7 +10,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 
-public class ContactPhoneTests extends TestBase {
+public class ContactPhoneTest extends TestBase {
 
     @Test
     public void testContactPhones() {
@@ -23,7 +23,7 @@ public class ContactPhoneTests extends TestBase {
     private String mergePhones(ContactData contact) {
         return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(), contact.getWorkPhone())
                 .stream().filter((s) -> !s.equals("")) //отфильтровываем пустые строки
-                .map(ContactPhoneTests::cleaned) //применяем очистку ко всем номерам телефонов
+                .map(ContactPhoneTest::cleaned) //применяем очистку ко всем номерам телефонов
                 .collect(Collectors.joining("\n")); //собираем одну большую строчку из всех телефонов
     }
 

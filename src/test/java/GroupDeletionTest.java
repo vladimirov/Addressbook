@@ -1,4 +1,4 @@
-package ru.stqa.pft.addressbook.tests;
+
 
 import org.hamcrest.CoreMatchers;
 import org.testng.annotations.BeforeMethod;
@@ -10,7 +10,7 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.testng.Assert.assertEquals;
 
-public class GroupDeletionTests extends TestBase {
+public class GroupDeletionTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {
