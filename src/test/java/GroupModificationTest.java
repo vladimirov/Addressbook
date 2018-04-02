@@ -27,5 +27,7 @@ public class GroupModificationTest extends TestBase {
         assertThat(app.group().count(), equalTo(before.size()));//hashing and pre-validation
         Groups after = app.group().all();
         assertThat(after, equalTo(before.without(modifiedGroup).withAdded(group)));
+
+
     }
 }
