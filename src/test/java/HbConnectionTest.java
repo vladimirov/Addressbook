@@ -5,6 +5,7 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.GroupData;
 
 
@@ -21,12 +22,13 @@ public class HbConnectionTest {
                 .configure() // configures settings from hibernate.cfg.xml
                 .build();
         try {
-            sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
-        } catch (Exception e) {
+            sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
+        }
+        catch (Exception e) {
             e.printStackTrace();
             // The registry would be destroyed by the SessionFactory, but we had trouble building the SessionFactory
             // so destroy it manually.
-            StandardServiceRegistryBuilder.destroy(registry);
+            StandardServiceRegistryBuilder.destroy( registry );
         }
     }
 
@@ -34,12 +36,12 @@ public class HbConnectionTest {
     public void testHbConnection() {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        List<GroupData> result = session.createQuery("from GroupData").list();
-        for (GroupData group : result) {
-            System.out.println(group);
+        List<ContactData> result = session.createQuery("from GroupData").list();
+        for (ContactData contact : result) {
+            System.out.println(contact);
+            System.out.println(contact.getGroups());
         }
         session.getTransaction().commit();
         session.close();
     }
-
 }

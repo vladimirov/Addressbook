@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6b33ff2-548c-4761-9ae6-d5dfc4d0d8d8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_13_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HbConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_13_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_12_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Addressbook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Addressbook.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HbConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HbConnectionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,29 +25,26 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="327">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+            <state relative-caret-position="289">
+              <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HbConnectionTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HbConnectionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HbConnectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="510">
+              <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -118,9 +107,9 @@
         <option value="$PROJECT_DIR$/src/test/java/TestBase.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/DbConnectionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/test/java/HbConnectionTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
       </list>
     </option>
   </component>
@@ -183,8 +172,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,12 +250,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java_pft" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -496,13 +485,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516966452303</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added specialized helper classes">
-      <created>1517227317886</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1517227317887</updated>
     </task>
     <task id="LOCAL-00009" summary="added specialized helper classes">
       <created>1517227377376</created>
@@ -840,38 +822,45 @@
       <option name="project" value="LOCAL" />
       <updated>1522761553670</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="lesson 71">
+      <created>1522766875931</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1522766875931</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DbConnectionTest_testDbConnection - 2018.04.03 at 16h 14m 45s.xml">
-      <configuration name="DbConnectionTest.testDbConnection" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HbConnectionTest - 2018.04.03 at 17h 02m 51s.xml">
-      <configuration name="HbConnectionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HbConnectionTest - 2018.04.03 at 17h 28m 36s.xml">
-      <configuration name="HbConnectionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HbConnectionTest - 2018.04.03 at 17h 30m 59s.xml">
-      <configuration name="HbConnectionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HbConnectionTest - 2018.04.03 at 17h 31m 13s.xml">
-      <configuration name="HbConnectionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HbConnectionTest - 2018.04.03 at 17h 35m 32s.xml">
-      <configuration name="HbConnectionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HbConnectionTest - 2018.04.03 at 17h 36m 19s.xml">
-      <configuration name="HbConnectionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="HbConnectionTest - 2018.04.03 at 17h 40m 57s.xml">
-      <configuration name="HbConnectionTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="HbConnectionTest - 2018.04.03 at 17h 43m 31s.xml">
       <configuration name="HbConnectionTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="HbConnectionTest - 2018.04.03 at 17h 45m 03s.xml">
+      <configuration name="HbConnectionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HbConnectionTest - 2018.04.03 at 17h 48m 12s.xml">
+      <configuration name="HbConnectionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HbConnectionTest - 2018.04.03 at 17h 56m 18s.xml">
+      <configuration name="HbConnectionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HbConnectionTest - 2018.04.03 at 18h 15m 52s.xml">
+      <configuration name="HbConnectionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HbConnectionTest - 2018.04.03 at 18h 28m 17s.xml">
+      <configuration name="HbConnectionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HbConnectionTest - 2018.04.03 at 18h 30m 04s.xml">
+      <configuration name="HbConnectionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HbConnectionTest - 2018.04.03 at 18h 32m 46s.xml">
+      <configuration name="HbConnectionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HbConnectionTest - 2018.04.03 at 18h 38m 10s.xml">
+      <configuration name="HbConnectionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="HbConnectionTest - 2018.04.03 at 18h 38m 27s.xml">
       <configuration name="HbConnectionTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -887,18 +876,18 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.21641791" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43147752" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5620985" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.4464668" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20575693" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20788912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4025696" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -914,7 +903,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created common HelperBase class for other helper classes" />
     <MESSAGE value="added lesson 35" />
     <MESSAGE value="optimized page transitions lesson 36" />
     <MESSAGE value="added lesson 40" />
@@ -939,7 +927,8 @@
     <MESSAGE value="lesson 67 - added testng.xml" />
     <MESSAGE value="lesson 69 - logging" />
     <MESSAGE value="lesson 70 - getting data from database" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 70 - getting data from database" />
+    <MESSAGE value="lesson 71" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 71" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -947,13 +936,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="31" lean-forward="true" selection-start-line="58" selection-start-column="31" selection-end-line="59" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1162,13 +1144,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-20180402T174430.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test-20180402T174430.log" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1200,27 +1176,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.13.Final/hibernate-core-5.2.13.Final.jar!/org/hibernate/boot/registry/StandardServiceRegistryBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="830">
+          <caret line="85" column="70" selection-start-line="85" selection-start-column="70" selection-end-line="85" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+        <state relative-caret-position="327">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HbConnectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
         </state>
       </provider>
     </entry>
