@@ -35,9 +35,6 @@ public class GroupData {
     @Type(type = "text")
     private String footer;
 
-//    @ManyToMany(mappedBy = "groups")
-
-
     public int getId() {
         return id;
     }

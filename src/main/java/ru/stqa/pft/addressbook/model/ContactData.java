@@ -1,22 +1,60 @@
 package ru.stqa.pft.addressbook.model;
 
+import org.hibernate.annotations.Type;
+
+import javax.persistence.Entity;
 import java.io.File;
 import java.util.HashSet;
 import java.util.Set;
+import javax.persistence.*;
 
+
+@Entity
+@Table(name = "addressbook")
 public class ContactData {
 
+    @Id
+    @Column(name = "id")
     private int id;
-    private String firstname;
-    private String lastname;
-    private String group;
-    private String homePhone;
-    private String mobilePhone;
-    private String workPhone;
-    private String allPhones;
-    private File photo;
 
-    private Set<GroupData> groups = new HashSet<>();
+    @Column(name = "firstname")
+    private String firstname;
+
+    @Column(name = "lastname")
+    private String lastname;
+
+    @Transient
+    private String group;
+
+    @Column(name = "home")
+    @Type(type = "text")
+    private String homePhone;
+
+    @Column(name = "mobile")
+    @Type(type = "text")
+    private String mobilePhone;
+
+    @Column(name = "work")
+    @Type(type = "text")
+    private String workPhone;
+
+    @Transient
+    private String allPhones;
+
+    @Column(name = "photo")
+    @Type(type = "text")
+    private String photo;
+
+    public File getPhoto() {
+        return new File(photo);
+    }
+
+    public ContactData withPhoto(File photo) {
+        this.photo = photo.getPath();
+        return this;
+    }
+
+    private Set<GroupData> groups = new HashSet<GroupData>();
 
     public String getWorkPhone() {
         return workPhone;
@@ -96,16 +134,6 @@ public class ContactData {
 
     public ContactData inGroup(GroupData group) {
         groups.add(group);
-        return this;
-    }
-
-
-    public File getPhoto() {
-        return photo;
-    }
-
-    public ContactData withPhoto(File photo) {
-        this.photo = photo;
         return this;
     }
 
