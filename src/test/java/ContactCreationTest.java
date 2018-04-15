@@ -12,7 +12,7 @@ public class ContactCreationTest extends TestBase {
     @Test
     public void testContactCreation() {
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             app.goTo().gotoHomePage();
             app.getContactHelper().initContactCreation();
             app.getContactHelper().clickOnNextButton();

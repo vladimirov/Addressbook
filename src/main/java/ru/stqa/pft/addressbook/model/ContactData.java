@@ -54,7 +54,8 @@ public class ContactData {
         return this;
     }
 
-    private Set<GroupData> groups = new HashSet<GroupData>();
+    @Transient
+    private Set<GroupData> groups = new HashSet<>();
 
     public String getWorkPhone() {
         return workPhone;
