@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6b33ff2-548c-4761-9ae6-d5dfc4d0d8d8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/pft/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/pft/addressbook/model/ContactData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/pft/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/pft/addressbook/model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ContactCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ContactCreationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HbConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HbConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stru.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stru.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,8 +37,8 @@
       <file leaf-file-name="HbConnectionTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HbConnectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="37" column="104" selection-start-line="37" selection-start-column="104" selection-end-line="37" selection-end-column="104" />
+            <state relative-caret-position="373">
+              <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -275,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.HbConnectionTest.testHbConnection">
+  <component name="RunManager" selected="TestNG.ContactCreationTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -300,16 +296,16 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ContactCreationTest.testContactCreation" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactCreationTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Addressbook" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ContactCreationTest" />
-      <option name="METHOD_NAME" value="testContactCreation" />
+      <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -323,16 +319,16 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="DbConnectionTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactCreationTest.testContactCreation" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Addressbook" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DbConnectionTest" />
-      <option name="METHOD_NAME" />
+      <option name="MAIN_CLASS_NAME" value="ContactCreationTest" />
+      <option name="METHOD_NAME" value="testContactCreation" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -451,19 +447,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
-      <item itemvalue="TestNG.DbConnectionTest" />
       <item itemvalue="TestNG.HbConnectionTest" />
       <item itemvalue="TestNG.ContactCreationTest.testContactCreation" />
       <item itemvalue="TestNG.DbConnectionTest.testDbConnection" />
       <item itemvalue="TestNG.HbConnectionTest.testHbConnection" />
+      <item itemvalue="TestNG.ContactCreationTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactCreationTest" />
         <item itemvalue="TestNG.HbConnectionTest.testHbConnection" />
         <item itemvalue="TestNG.HbConnectionTest" />
         <item itemvalue="TestNG.DbConnectionTest.testDbConnection" />
         <item itemvalue="TestNG.ContactCreationTest.testContactCreation" />
-        <item itemvalue="TestNG.DbConnectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -477,13 +473,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516966452303</updated>
-    </task>
-    <task id="LOCAL-00011" summary="created common HelperBase class for other helper classes">
-      <created>1517393137978</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1517393137978</updated>
     </task>
     <task id="LOCAL-00012" summary="created common HelperBase class for other helper classes">
       <created>1518530205964</created>
@@ -821,13 +810,17 @@
       <option name="project" value="LOCAL" />
       <updated>1523650973450</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="lesson 72 - data selection conditions">
+      <created>1523786388794</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1523786388794</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HbConnectionTest - 2018.04.15 at 10h 24m 53s.xml">
-      <configuration name="HbConnectionTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="HbConnectionTest - 2018.04.15 at 10h 27m 34s.xml">
       <configuration name="HbConnectionTest" configurationId="TestNG" />
     </history-entry>
@@ -855,10 +848,12 @@
     <history-entry file="HbConnectionTest - 2018.04.15 at 12h 55m 03s.xml">
       <configuration name="HbConnectionTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="HbConnectionTest_testHbConnection - 2018.04.15 at 12h 55m 32s.xml">
+      <configuration name="HbConnectionTest.testHbConnection" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -869,11 +864,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.44496125" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.21641791" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.7875969" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7875969" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49926794" weight="0.44496125" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22620791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22620791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -895,7 +890,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added lesson 35" />
     <MESSAGE value="optimized page transitions lesson 36" />
     <MESSAGE value="added lesson 40" />
     <MESSAGE value="added lesson 45" />
@@ -920,7 +914,8 @@
     <MESSAGE value="lesson 69 - logging" />
     <MESSAGE value="lesson 70 - getting data from database" />
     <MESSAGE value="lesson 71" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 71" />
+    <MESSAGE value="lesson 72 - data selection conditions" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 72 - data selection conditions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1200,8 +1195,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HbConnectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="37" column="104" selection-start-line="37" selection-start-column="104" selection-end-line="37" selection-end-column="104" />
+        <state relative-caret-position="373">
+          <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
         </state>
       </provider>
     </entry>
