@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c6b33ff2-548c-4761-9ae6-d5dfc4d0d8d8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/stru.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stru.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,7 +36,7 @@
       <file leaf-file-name="HbConnectionTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HbConnectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
+            <state relative-caret-position="191">
               <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
             </state>
           </provider>
@@ -474,13 +473,6 @@
       <option name="presentableId" value="Default" />
       <updated>1516966452303</updated>
     </task>
-    <task id="LOCAL-00012" summary="created common HelperBase class for other helper classes">
-      <created>1518530205964</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1518530205964</updated>
-    </task>
     <task id="LOCAL-00013" summary="created common HelperBase class for other helper classes">
       <created>1518530258354</created>
       <option name="number" value="00013" />
@@ -817,13 +809,17 @@
       <option name="project" value="LOCAL" />
       <updated>1523786388794</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="lesson 72 - data selection conditions">
+      <created>1523786737414</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1523786737414</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HbConnectionTest - 2018.04.15 at 10h 27m 34s.xml">
-      <configuration name="HbConnectionTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="HbConnectionTest - 2018.04.15 at 10h 28m 38s.xml">
       <configuration name="HbConnectionTest" configurationId="TestNG" />
     </history-entry>
@@ -851,6 +847,9 @@
     <history-entry file="HbConnectionTest_testHbConnection - 2018.04.15 at 12h 55m 32s.xml">
       <configuration name="HbConnectionTest.testHbConnection" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ContactCreationTest - 2018.04.15 at 13h 04m 54s.xml">
+      <configuration name="ContactCreationTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -864,7 +863,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.44496125" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.21641791" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7875969" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28217053" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49926794" weight="0.44496125" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -1195,7 +1194,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HbConnectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="191">
           <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
         </state>
       </provider>
