@@ -38,7 +38,7 @@ public class GroupCreationTest extends TestBase {
         }
     }
 
-    @DataProvider
+    @DataProvider   //"src/main/resources/groups.json"
     public Iterator<Object[]> validGroupsFromJson() throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/main/resources/groups.json")))) {
             String json = "";
@@ -48,8 +48,8 @@ public class GroupCreationTest extends TestBase {
                 line = reader.readLine();
             }
             Gson gson = new Gson();
-            List<GroupData> groups = gson.fromJson(json, new TypeToken<List<GroupData>>() {}.getType());
-            return groups.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+            List<GroupData> groups = gson.fromJson(json, new TypeToken<List<GroupData>>(){}.getType()); // List<GroupData>.class
+            return groups.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
         }
     }
 
@@ -58,10 +58,10 @@ public class GroupCreationTest extends TestBase {
         app.goTo().groupPage();
         Groups before = app.group().all();
         app.group().create(group);
-        assertThat(app.group().count(), equalTo(before.size() + 1));//hashing and pre-validation
+        assertThat(app.group().count(), equalTo(before.size() + 1));
         Groups after = app.group().all();
         assertThat(after, equalTo(
-                before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
+                before.withAdded(group.withId(after.stream().mapToInt(GroupData::getId).max().getAsInt()))));
     }
 
     @Test(enabled = false)
