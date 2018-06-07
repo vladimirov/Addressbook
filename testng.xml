@@ -4,14 +4,14 @@
     <test name="Groups" >
         <classes>
             <class name="GroupCreationTest" />
-            <!--<class name="GroupModificationTest" />-->
-            <!--<class name="GroupDeletionTest" />-->
+            <class name="GroupModificationTest" />
+            <class name="GroupDeletionTest" />
         </classes>
     </test>
 
     <test name="Contacts">
         <classes>
-            <!--<class name="ContactCreationTest" />-->
+            <class name="ContactCreationTest" />
         </classes>
     </test>
 </suite>
