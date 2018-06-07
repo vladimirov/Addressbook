@@ -48,8 +48,7 @@ public class ApplicationManager {
         } else if (browser.equals(BrowserType.IE)) {
             driver = new InternetExplorerDriver();
         }
-//        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         driver.get(properties.getProperty("web.baseUrl"));
         sessionHelper = new SessionHelper(driver);
         groupHelper = new GroupHelper(driver);
