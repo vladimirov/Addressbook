@@ -35,7 +35,8 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:3.9.1" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.13.0" level="project" />
-    <orderEntry type="library" name="Maven: org.testng:testng:6.10" level="project" />
+    <orderEntry type="library" name="Maven: org.testng:testng:6.14.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache-extras.beanshell:bsh:2.0b6" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:java-hamcrest:2.0.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.beust:jcommander:1.72" level="project" />
     <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.10" level="project" />
@@ -44,7 +45,7 @@
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:6.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.2.12.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.0.Final" level="project" />
@@ -65,5 +66,14 @@
     <orderEntry type="library" name="Maven: org.jvnet.staxex:stax-ex:1.7.8" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.13" level="project" />
     <orderEntry type="library" name="Maven: javax.activation:activation:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-testng-adaptor:1.5.3" level="project" />
+    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-java-aspects:1.5.3" level="project" />
+    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-java-adaptor-api:1.5.3" level="project" />
+    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-java-annotations:1.5.3" level="project" />
+    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-model:1.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.jvnet.jaxb2_commons:jaxb2-basics-runtime:0.9.3" level="project" />
+    <orderEntry type="library" name="Maven: ru.qatools.commons:properties:2.0.RC5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tika:tika-core:1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.8.3" level="project" />
   </component>
 </module>

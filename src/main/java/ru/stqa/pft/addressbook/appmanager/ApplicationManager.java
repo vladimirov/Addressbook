@@ -8,11 +8,9 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
     private final Properties properties;
@@ -30,23 +28,28 @@ public class ApplicationManager {
         properties = new Properties();
     }
 
-
     public void init() throws IOException {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
 
         dbHelper = new DbHelper();
 
-        if (browser.equals(BrowserType.CHROME)) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Projects\\Addressbook\\src\\main\\resources\\chromedriver.exe");
-            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-            driver = new ChromeDriver(capabilities);
-        } else if (browser.equals(BrowserType.FIREFOX)) {
-            System.setProperty("webdriver.firefox.driver", "C:\\Projects\\Addressbook\\src\\main\\resources\\geckodriver.exe");
-            DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-            driver = new FirefoxDriver(capabilities);
-        } else if (browser.equals(BrowserType.IE)) {
-            driver = new InternetExplorerDriver();
+        switch (browser) {
+            case BrowserType.CHROME: {
+                System.setProperty("webdriver.chrome.driver", "C:\\Windows\\chromedriver.exe");
+                DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+                driver = new ChromeDriver(capabilities);
+                break;
+            }
+            case BrowserType.FIREFOX: {
+                System.setProperty("webdriver.chrome.driver", "C:\\Windows\\geckodriver.exe");
+                DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+                driver = new FirefoxDriver(capabilities);
+                break;
+            }
+            case BrowserType.IE:
+                driver = new InternetExplorerDriver();
+                break;
         }
 //        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         driver.get(properties.getProperty("web.baseUrl"));
